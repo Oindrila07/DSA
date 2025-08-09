@@ -5,7 +5,7 @@ import java.util.List;
 
 public class countOfValidParenthesis {
     public static void main(String[] args) {
-        System.out.println(generateParenthesis(8));
+        System.out.println(generateParenthesis(4));
     }
 
     private static int generateParenthesis(int n){
