@@ -27,3 +27,13 @@ public class maxConsecutiveOnes {
         System.out.println(longestOnes(nums,3));
     }
 }
+
+/*
+Intuition:
+----------
+This is a sliding window problem:
+We want the longest contiguous sequence where we can flip at most k zeros to ones.
+Instead of literally flipping values, we count how many zeros are inside our current window.
+If the count of zeros exceeds k, the window becomes invalid, so we shrink from the left until it becomes valid again.
+While moving the window, we keep track of the maximum valid length.
+ */
