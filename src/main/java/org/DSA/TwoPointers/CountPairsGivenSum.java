@@ -59,7 +59,7 @@ If the sum is greater than target → decrease the sum by moving right pointer b
 
 Handling duplicates
 --------------------
-If duplicates are possible and we want all pairs with distinct indices, then:
+If duplicates are possible, and we want all pairs with distinct indices, then:
 When you find a match, you might need to count how many duplicates of arr[left] and arr[right] exist
 to count all unique index combinations.
 
