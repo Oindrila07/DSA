@@ -73,9 +73,6 @@ if(open==max && close==max){
 We stop recursion when the string is complete.
 
 Add an opening bracket:
-java
-Copy
-Edit
 if (open < max) {
     backtrack(result, current + "(", open + 1, close, max);
 }
@@ -84,9 +81,6 @@ If we still have ( left to use, add one and continue.
 This grows the string.
 
 Add a closing bracket:
-java
-Copy
-Edit
 if (close < open) {
     backtrack(result, current + ")", open, close + 1, max);
 }
@@ -102,10 +96,6 @@ This ensures we never generate invalid strings like "(()))".
 Goal: Generate all valid strings of 2 open and 2 close parentheses.
 
 The tree of decisions:
-
-arduino
-Copy
-Edit
 ""
 ├── "(" → open=1
 │   ├── "((" → open=2
@@ -116,9 +106,6 @@ Edit
 │           └── "()()" → close=2 ✅
 So, the answer is:
 
-css
-Copy
-Edit
 ["(())", "()()"]
  */
 
