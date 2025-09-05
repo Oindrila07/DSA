@@ -12,6 +12,10 @@ public class Main {
         TreeNode head=new TreeNode(1);
         List<Integer> list=Arrays.asList(0,1,2,3,4,5,-1,8,-1,-1,6,7,-1,-1,9);
         populate(head,list,1);
+
+        TreeNode head2=new TreeNode(236);
+        List<Integer> list2=Arrays.asList(0,236,104,701,-1,227,-1,911);
+        populate(head2,list2,1);
         display(head, "");
 
         List<Integer> preOrderedList = new PreOrderTraversal().preorderTraversal(head);
@@ -20,7 +24,7 @@ public class Main {
         List<Integer> postOrderedList = new PostOrderTraversalIterative().postorderTraversal(head);
         System.out.println(postOrderedList);
     }
-    private static void populate(TreeNode node, List<Integer> list, int index){
+    public static void populate(TreeNode node, List<Integer> list, int index){
         if(index>=list.size())return;
         if(index*2<list.size() && list.get(index*2)!=-1){
             node.left=new TreeNode(list.get(index*2));
@@ -31,7 +35,7 @@ public class Main {
             populate(node.right, list, index*2+1);
         }
     }
-    private static void display(TreeNode node, String s){
+    public static void display(TreeNode node, String s){
         if(node==null)return;
         System.out.println(s+"|----->"+node.val);
         display(node.left,s+"   ");
