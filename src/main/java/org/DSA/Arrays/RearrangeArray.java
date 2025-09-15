@@ -1,5 +1,7 @@
 package org.DSA.Arrays;
 
+import java.util.Arrays;
+
 public class RearrangeArray {
     public void arrange(long[] arr) {
         int n=arr.length;
