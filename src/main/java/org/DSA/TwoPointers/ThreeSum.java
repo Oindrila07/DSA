@@ -1,4 +1,4 @@
-package org.DSA.HashMap;
+package org.DSA.TwoPointers;
 
 import java.util.*;
 
@@ -8,7 +8,6 @@ public class ThreeSum {
         for(int i=0;i<nums.length-2;i++){
             HashMap<Integer,Integer> hash=new HashMap<>();
             for(int j=i+1;j<nums.length;j++){
-                if(i==j)continue;
                 int sum=-(nums[i]+nums[j]);
                 if(hash.containsKey(sum)){
                     List<Integer> temp= Arrays.asList(nums[i],sum,nums[j]);
