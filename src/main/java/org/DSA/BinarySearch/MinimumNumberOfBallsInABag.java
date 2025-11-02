@@ -1,4 +1,4 @@
-package org.DSA.BinaryTrees;
+package org.DSA.BinarySearch;
 
 public class MinimumNumberOfBallsInABag {
     public int minimumSize(int[] nums, int maxOperations) {
